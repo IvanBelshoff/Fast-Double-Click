@@ -1,0 +1,100 @@
+{
+  "registros": [
+    {
+      "id": "56fb2baa-b41f-4a99-bb0d-e742b3821fdc",
+      "apelido": "Margaret Jones-Leffler",
+      "data_inicio": "2025-04-26T22:10:59.925Z",
+      "data_fim": "2025-04-26T22:11:00.025Z",
+      "data_registro": "2025-04-26T22:11:00.122Z",
+      "duracao": "0.100 segundos"
+    },
+    {
+      "id": "7cb59dd4-6ed0-459e-95a7-50221588efca",
+      "apelido": "Gladys Pfeffer",
+      "data_inicio": "2025-04-26T22:11:03.327Z",
+      "data_fim": "2025-04-26T22:11:05.609Z",
+      "data_registro": "2025-04-26T22:11:05.667Z",
+      "duracao": "2.282 segundos"
+    },
+    {
+      "id": "e9791a2a-d141-4e9a-8e21-4fc822f24886",
+      "apelido": "Deanna Kreiger",
+      "data_inicio": "2025-04-26T22:11:23.097Z",
+      "data_fim": "2025-04-26T22:11:26.294Z",
+      "data_registro": "2025-04-26T22:11:26.373Z",
+      "duracao": "3.197 segundos"
+    },
+    {
+      "id": "55be9c0d-59c6-4f25-8e99-db1530d778f1",
+      "apelido": "Jake Little",
+      "data_inicio": "2025-04-26T22:11:31.846Z",
+      "data_fim": "2025-04-26T22:11:33.079Z",
+      "data_registro": "2025-04-26T22:11:33.142Z",
+      "duracao": "1.233 segundos"
+    },
+    {
+      "id": "93dd701d-fd79-4553-bf17-9e2409b307e7",
+      "apelido": "Neil Wintheiser",
+      "data_inicio": "2025-04-26T22:11:53.758Z",
+      "data_fim": "2025-04-26T22:12:00.710Z",
+      "data_registro": "2025-04-26T22:12:00.793Z",
+      "duracao": "6.952 segundos"
+    },
+    {
+      "id": "845eb91a-d620-4037-be99-8ed117f5df97",
+      "apelido": "Teste",
+      "data_inicio": "2025-04-26T22:12:24.144Z",
+      "data_fim": "2025-04-26T22:12:25.214Z",
+      "data_registro": "2025-04-26T22:12:25.304Z",
+      "duracao": "1.070 segundos"
+    },
+    {
+      "id": "05a9190b-2120-44a8-8a64-f6a86be0af58",
+      "apelido": "Dr. Jared Heidenreich",
+      "data_inicio": "2025-04-26T22:31:50.738Z",
+      "data_fim": "2025-04-26T22:31:51.556Z",
+      "data_registro": "2025-04-26T22:31:51.623Z",
+      "duracao": "0.818 segundos"
+    },
+    {
+      "id": "c531da38-6ad4-4674-8aae-4d7fb4136959",
+      "apelido": "Shari Lebsack",
+      "data_inicio": "2025-04-26T22:32:04.613Z",
+      "data_fim": "2025-04-26T22:32:07.396Z",
+      "data_registro": "2025-04-26T22:32:07.462Z",
+      "duracao": "2.783 segundos"
+    },
+    {
+      "id": "2a387e31-afd1-4045-b0ee-373b9cc4c63c",
+      "apelido": "Novo Registro",
+      "data_inicio": "2025-04-26T22:32:18.007Z",
+      "data_fim": "2025-04-26T22:32:19.256Z",
+      "data_registro": "2025-04-26T22:32:19.320Z",
+      "duracao": "1.249 segundos"
+    },
+    {
+      "id": "5f8a4aa8-439b-4c6b-82f4-52ce5c7d9b82",
+      "apelido": "Sara",
+      "data_inicio": "2025-04-26T22:32:40.854Z",
+      "data_fim": "2025-04-26T22:32:44.872Z",
+      "data_registro": "2025-04-26T22:32:44.956Z",
+      "duracao": "4.018 segundos"
+    },
+    {
+      "id": "36481fe7-8689-439c-9db8-eff8db2f08d7",
+      "apelido": "ivan",
+      "data_inicio": "2025-04-27T00:33:39.336Z",
+      "data_fim": "2025-04-27T00:33:40.809Z",
+      "data_registro": "2025-04-27T00:33:40.891Z",
+      "duracao": "1.473 segundos"
+    },
+    {
+      "id": "06253521-5e64-4838-ba81-d1c1c1b81dc6",
+      "apelido": "Lynne Lakin-Thiel",
+      "data_inicio": "2025-04-27T01:27:48.408Z",
+      "data_fim": "2025-04-27T01:27:49.360Z",
+      "data_registro": "2025-04-27T01:27:49.468Z",
+      "duracao": "0.952 segundos"
+    }
+  ]
+}

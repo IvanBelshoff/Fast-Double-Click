@@ -1,0 +1,36 @@
+{
+    "name": "backend-fast-double-click",
+    "version": "0.0.1",
+    "description": "Backend for Fast Double Click",
+    "type": "commonjs",
+    "devDependencies": {
+        "@types/cors": "^2.8.13",
+        "@types/express": "^4.17.17",
+        "@types/lodash": "^4.17.16",
+        "@types/morgan": "^1.9.4",
+        "@types/node": "^16.11.10",
+        "@typescript-eslint/eslint-plugin": "^6.4.0",
+        "@typescript-eslint/parser": "^6.4.0",
+        "eslint": "^8.47.0",
+        "ts-node": "10.7.0",
+        "ts-node-dev": "^2.0.0",
+        "typescript": "4.5.2"
+    },
+    "dependencies": {
+        "@faker-js/faker": "^9.7.0",
+        "body-parser": "^2.2.0",
+        "cors": "^2.8.5",
+        "dotenv": "^16.3.1",
+        "express": "^4.18.2",
+        "fs": "^0.0.1-security",
+        "http-status-codes": "^2.2.0",
+        "lodash": "^4.17.21",
+        "lowdb": "^7.0.1",
+        "morgan": "^1.10.0",
+        "yup": "^1.2.0"
+    },
+    "scripts": {
+        "start": "ts-node-dev ./src/index.ts",
+        "build": "tsc"
+    }
+}
