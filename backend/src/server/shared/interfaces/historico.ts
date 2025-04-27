@@ -18,4 +18,5 @@ export interface IGetAllHistoricoQuery {
     limit?: number;
     filter?: string;
     sort?: string;
+    dates?: string
 }

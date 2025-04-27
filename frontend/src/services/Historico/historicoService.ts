@@ -40,7 +40,7 @@ export interface ILoaderHistorico {
     }
 }
 
-async function getAll(filter?: string, page?: string, limit?: string, sort?: string): Promise<IHistoricoLoader | undefined> {
+async function getAll(filter?: string, page?: string, limit?: string, sort?: string, dates?: string): Promise<IHistoricoLoader | undefined> {
 
     try {
         const res = await Api().get('/historico', {
@@ -48,7 +48,8 @@ async function getAll(filter?: string, page?: string, limit?: string, sort?: str
                 filter: filter,
                 page: page,
                 limit: limit,
-                sort: sort
+                sort: sort,
+                dates: dates
             }
         });
 

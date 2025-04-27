@@ -65,36 +65,76 @@
       "duracao": "2.783 segundos"
     },
     {
-      "id": "2a387e31-afd1-4045-b0ee-373b9cc4c63c",
-      "apelido": "Novo Registro",
-      "data_inicio": "2025-04-26T22:32:18.007Z",
-      "data_fim": "2025-04-26T22:32:19.256Z",
-      "data_registro": "2025-04-26T22:32:19.320Z",
-      "duracao": "1.249 segundos"
+      "id": "e6bd9df4-940b-4696-97a0-493653894db2",
+      "apelido": "Hector Ritchie V",
+      "data_inicio": "2025-04-27T14:51:19.357Z",
+      "data_fim": "2025-04-27T14:51:21.779Z",
+      "data_registro": "2025-04-27T14:51:21.886Z",
+      "duracao": "2.422 segundos"
     },
     {
-      "id": "5f8a4aa8-439b-4c6b-82f4-52ce5c7d9b82",
-      "apelido": "Sara",
-      "data_inicio": "2025-04-26T22:32:40.854Z",
-      "data_fim": "2025-04-26T22:32:44.872Z",
-      "data_registro": "2025-04-26T22:32:44.956Z",
-      "duracao": "4.018 segundos"
+      "id": "43f55ebf-87d7-4bad-932a-0055476ace97",
+      "apelido": "Delores Fay",
+      "data_inicio": "2025-04-27T14:52:57.716Z",
+      "data_fim": "2025-04-27T14:52:58.758Z",
+      "data_registro": "2025-04-27T14:52:58.987Z",
+      "duracao": "1.042 segundos"
     },
     {
-      "id": "36481fe7-8689-439c-9db8-eff8db2f08d7",
-      "apelido": "ivan",
-      "data_inicio": "2025-04-27T00:33:39.336Z",
-      "data_fim": "2025-04-27T00:33:40.809Z",
-      "data_registro": "2025-04-27T00:33:40.891Z",
-      "duracao": "1.473 segundos"
+      "id": "827eced4-dfd5-45b3-9530-36ab2f393e3f",
+      "apelido": "Guadalupe Abernathy",
+      "data_inicio": "2025-04-27T14:54:23.416Z",
+      "data_fim": "2025-04-27T14:54:24.564Z",
+      "data_registro": "2025-04-27T14:54:24.647Z",
+      "duracao": "1.148 segundos"
     },
     {
-      "id": "06253521-5e64-4838-ba81-d1c1c1b81dc6",
-      "apelido": "Lynne Lakin-Thiel",
-      "data_inicio": "2025-04-27T01:27:48.408Z",
-      "data_fim": "2025-04-27T01:27:49.360Z",
-      "data_registro": "2025-04-27T01:27:49.468Z",
-      "duracao": "0.952 segundos"
+      "id": "0451a117-e00f-41b6-b1f0-7cec6b85f9e1",
+      "apelido": "Grant Welch",
+      "data_inicio": "2025-04-27T14:55:02.003Z",
+      "data_fim": "2025-04-27T14:55:05.460Z",
+      "data_registro": "2025-04-27T14:55:05.555Z",
+      "duracao": "3.457 segundos"
+    },
+    {
+      "id": "e0b1dc97-97bd-494a-8819-a82d9bf23a79",
+      "apelido": "Kerry Leannon",
+      "data_inicio": "2025-04-27T15:00:01.628Z",
+      "data_fim": "2025-04-27T15:00:03.680Z",
+      "data_registro": "2025-04-27T15:00:03.876Z",
+      "duracao": "2.052 segundos"
+    },
+    {
+      "id": "137e2f65-60c9-49b2-9267-957ee6d7b762",
+      "apelido": "Jody Wintheiser",
+      "data_inicio": "2025-04-27T15:00:09.600Z",
+      "data_fim": "2025-04-27T15:00:10.680Z",
+      "data_registro": "2025-04-27T15:00:10.762Z",
+      "duracao": "1.080 segundos"
+    },
+    {
+      "id": "919a786d-6f99-4a9c-b742-58ce9bfcecb5",
+      "apelido": "Lisa Klein",
+      "data_inicio": "2025-04-27T15:00:57.943Z",
+      "data_fim": "2025-04-27T15:00:59.211Z",
+      "data_registro": "2025-04-27T15:00:59.288Z",
+      "duracao": "1.268 segundos"
+    },
+    {
+      "id": "46287482-d475-47ac-bf0f-ebbbda9f3972",
+      "apelido": "Kay Gislason",
+      "data_inicio": "2025-04-27T15:01:11.401Z",
+      "data_fim": "2025-04-27T15:01:12.613Z",
+      "data_registro": "2025-04-27T15:01:12.701Z",
+      "duracao": "1.212 segundos"
+    },
+    {
+      "id": "f9d79ee0-47b2-44e7-af06-63d1e9636b5a",
+      "apelido": "Ivan Belshoff",
+      "data_inicio": "2025-04-27T15:09:36.011Z",
+      "data_fim": "2025-04-27T15:09:37.185Z",
+      "data_registro": "2025-04-27T15:09:37.270Z",
+      "duracao": "1.174 segundos"
     }
   ]
 }

@@ -11,15 +11,16 @@ export const getAllValidation = validation((getSchema) => ({
         limit: yup.number().optional().moreThan(0),
         filter: yup.string().optional(),
         sort: yup.string().optional(),
+        dates: yup.string().optional()
     }))
 }));
 
 export const getAll = async (req: Request<{}, {}, {}, IGetAllHistoricoQuery>, res: Response) => {
 
-    console.log(req.query.filter)
     const result = await HistoricoProvider.getAll(
         req.query.filter,
-        req.query.sort
+        req.query.sort,
+        req.query.dates,
     );
 
     const count = await HistoricoProvider.count(

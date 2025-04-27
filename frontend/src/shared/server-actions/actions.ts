@@ -3,7 +3,6 @@ import { Api } from "@/app/api/services/api-config";
 import { isAxiosError } from "axios";
 import { revalidatePath } from "next/cache";
 
-
 export interface ICreateHistoricoAction {
     errors?: {
         default?: string
@@ -58,7 +57,7 @@ export async function createHistoricoAction(prevState: any, formData: FormData) 
 
             const response: ICreateHistoricoAction = {
                 success: {
-                    default: 'Justificativa criada com sucesso',
+                    default: 'Registro criado com sucesso',
                 }
             };
 
@@ -100,4 +99,63 @@ export async function createHistoricoAction(prevState: any, formData: FormData) 
         }
     }
     revalidatePath('/historico');
+}
+
+
+export interface IDeleteHistoricoByIdAction {
+    errors?: {
+        default?: string
+    }
+    success?: {
+        default?: string
+    }
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export async function deleteHistoricoById(prevState: any, formData: FormData) {
+
+    try {
+
+        const id = formData.get('id') as string;
+
+        const create = await Api().delete(`/historico/${id}`);
+
+        if (create.status == 204) {
+
+            const response: IDeleteHistoricoByIdAction = {
+                success: {
+                    default: 'Registro deletado com sucesso',
+                }
+            };
+
+            return response;
+
+        }
+
+    } catch (error) {
+
+        if (isAxiosError(error)) {
+
+            const response: IDeleteHistoricoByIdAction = {
+                errors: {
+                    default: 'Erro ao deletar a registro.'
+                }
+            };
+
+            // Retorno de um objeto indicando que ocorreu um erro durante a recuperação de senha.
+            return response;
+
+        } else {
+
+            const response: IDeleteHistoricoByIdAction = {
+                errors: {
+                    default: 'Erro desconhecido ao deletar a registro'
+                }
+            };
+
+            // Retorno de um objeto indicando que ocorreu um erro durante a recuperação de senha.
+            return response;
+        }
+    }
+    revalidatePath('/registros');
 }

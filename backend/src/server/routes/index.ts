@@ -11,7 +11,6 @@ router.get('/', (_, res) => {
 //FUnciononarios
 router.post('/historico', HistoricoController.createValidation, HistoricoController.create);
 router.get('/historico', HistoricoController.getAll);
-router.get('/historico/:id', HistoricoController.getByIdValidation, HistoricoController.getById);
 router.delete('/historico/:id', HistoricoController.deleteByIdValidation, HistoricoController.deleteById);
 
 export { router };

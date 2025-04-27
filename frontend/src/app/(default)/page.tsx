@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Alert } from "@/shared/components/Alert";
 import { createHistoricoAction, ICreateHistoricoAction } from "@/shared/server-actions/actions";
 import { redirect } from "next/navigation";
 import { useActionState, useEffect, useState } from "react";
@@ -19,6 +20,7 @@ export default function Home() {
   const [startDate, setStartDate] = useState<Date | null>(null);
   const [elapsedTime, setElapsedTime] = useState<number>(0); // tempo em ms
   const [inputValue, setInputValue] = useState<string>("");
+  const [alert, setAlert] = useState<boolean>(false);
 
   const [responseCreateHistorico, setResponseCreateHistorico] = useState<ICreateHistoricoAction | null>(null);
 
@@ -84,6 +86,9 @@ export default function Home() {
   useEffect(() => {
 
     if (stateCreateJustificativa?.errors) {
+
+      setAlert(true);
+
       setResponseCreateHistorico({
         errors: {
           default: stateCreateJustificativa.errors.default,
@@ -96,36 +101,37 @@ export default function Home() {
       });
 
       setTimeout(() => {
+        setAlert(false);
         setResponseCreateHistorico(null);
       }, 5000);
     }
 
     if (stateCreateJustificativa?.success) {
+      setAlert(true);
 
       setResponseCreateHistorico({
         success: {
           default: stateCreateJustificativa.success.default,
-        }
+        },
       });
 
       setTimeout(() => {
+        setAlert(false);
         setResponseCreateHistorico(null);
         redirect('/');
-      }, 5000);
+      }, 2000);
     }
 
   }, [stateCreateJustificativa]);
 
-
-  useEffect(() => {
-
-    console.log(responseCreateHistorico);
-
-  }, [responseCreateHistorico]);
-
   return (
     <main className="flex flex-col">
       <div className="flex gap-2 h-[calc(100vh-56px)]">
+        <Alert
+          type={(responseCreateHistorico?.errors?.default || responseCreateHistorico?.errors?.default) ? 'danger' : 'sucess'}
+          message={responseCreateHistorico?.errors?.default || responseCreateHistorico?.errors?.default || responseCreateHistorico?.success?.default || ''}
+          view={(responseCreateHistorico?.errors?.default || responseCreateHistorico?.errors?.default || responseCreateHistorico?.success?.default) ? true : false}
+        />
         <div className="w-full flex">
           <div className="max-w-[400px] w-full flex flex-col gap-4 items-center justify-center mx-auto">
             <h1>Deseja inserir um apelido?</h1>
@@ -137,11 +143,11 @@ export default function Home() {
               {data?.dataInicial && <input type="hidden" name="data_inicio" id="data_inicio" value={data.dataInicial.toISOString()} />}
               {data?.dataFinal && <input type="hidden" name="data_fim" id="data_fim" value={data.dataFinal.toISOString()} />}
               {data?.segundos && <input type="hidden" name="duracao" id="duracao" value={`${data.segundos.toFixed(3)} segundos`} />}
-              
+
               <Button
                 onClick={handleRegister}
                 type={running ? "button" : "submit"}
-                disabled={isPendingCreateJustificativa}
+                disabled={isPendingCreateJustificativa || alert}
                 className="mt-4 cursor-pointer"
               >
                 {running ? "Parar" : "Iniciar"}
