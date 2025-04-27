@@ -20,10 +20,12 @@ export const getAll = async (req: Request<{}, {}, {}, IGetAllHistoricoQuery>, re
     const result = await HistoricoProvider.getAll(
         req.query.filter,
         req.query.sort,
-        req.query.dates,
+        req.query.dates
     );
 
     const count = await HistoricoProvider.count(
+        req.query.filter,
+        req.query.dates
     );
 
     if (result instanceof Error) {

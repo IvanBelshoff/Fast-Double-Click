@@ -48,7 +48,6 @@ export default function Home() {
     }
   };
 
-  // Atualiza o tempo decorrido em tempo real
   useEffect(() => {
     let interval: NodeJS.Timeout;
 
@@ -65,7 +64,6 @@ export default function Home() {
     };
   }, [running, startDate]);
 
-  // Formatar tempo para segundos.milissegundos
   const formatElapsedTime = (ms: number) => {
     const seconds = Math.floor(ms / 1000);
     const milliseconds = ms % 1000;
@@ -103,7 +101,7 @@ export default function Home() {
       setTimeout(() => {
         setAlert(false);
         setResponseCreateHistorico(null);
-      }, 5000);
+      }, 2000);
     }
 
     if (stateCreateJustificativa?.success) {

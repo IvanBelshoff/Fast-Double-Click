@@ -36,31 +36,36 @@ export default async function Registros(props: IPagePedidosProps) {
 
         <div className="w-[95%] max-h-[95%] flex flex-col gap-2 p-4 bg-paper border-primary border rounded-lg shadow-md overflow-y-auto">
 
-          {totalCount > 0 && (
-            <div className="flex h-auto w-full flex-1 gap-2 justify-center items-center ">
-              <div className="w-1/2 flex gap-2 items-center">
-                <Search placeholder="Pesquisar..." typeSearch="text" />
-                {filter && <Clear />}
-              </div>
-              <div className="w-1/2 flex items-center">
-                <DateTimeRangePicker />
-              </div>
+          <div className="flex h-auto w-full flex-1 gap-2 justify-center items-center ">
+            <div className="w-1/2 flex gap-2 items-center">
+              <Search placeholder="Pesquisar..." typeSearch="text" />
+              {filter && <Clear />}
             </div>
+            <div className="w-1/2 flex items-center">
+              <DateTimeRangePicker />
+            </div>
+          </div>
 
+          {totalCount > 0 ? (
+            <PageRegistros
+              registros={registros}
+              heads={[
+                { key: 'apelido', value: 'Apelido' },
+                { key: 'data_inicio', value: 'Data Início' },
+                { key: 'data_fim', value: 'Data Fim' },
+                { key: 'data_registro', value: 'Data Registro' },
+                { key: 'duracao', value: 'Duração' },
+                { key: 'deletar', value: 'Deletar' },
+              ]}
+              idSort={sort?.split('.')[0]}
+              orderSort={sort?.split('.')[1]}
+            />
+          ):(
+            <div className="flex flex-col gap-2 items-center justify-center w-full h-full">
+              <h1 className="text-2xl font-bold">Nenhum registro encontrado</h1>
+              <p className="text-gray-500">Tente ajustar os filtros de pesquisa.</p>
+            </div>
           )}
-          <PageRegistros
-            registros={registros}
-            heads={[
-              { key: 'apelido', value: 'Apelido' },
-              { key: 'data_inicio', value: 'Data Início' },
-              { key: 'data_fim', value: 'Data Fim' },
-              { key: 'data_registro', value: 'Data Registro' },
-              { key: 'duracao', value: 'Duração' },
-              { key: 'deletar', value: 'Deletar' },
-            ]}
-            idSort={sort?.split('.')[0]}
-            orderSort={sort?.split('.')[1]}
-          />
 
         </div>
 
