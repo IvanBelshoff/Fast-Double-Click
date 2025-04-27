@@ -92,7 +92,7 @@ async function getAll(filter?: string, page?: string, limit?: string, sort?: str
             const response: IHistoricoLoader = {
                 errors: errors
             };
-            // Retorno dos erros
+
             return response;
 
         }

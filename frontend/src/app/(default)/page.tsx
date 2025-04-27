@@ -26,12 +26,10 @@ export default function Home() {
 
   const handleRegister = () => {
     if (!startDate) {
-      // Primeiro clique: iniciar
       const now = new Date();
       setStartDate(now);
       setRunning(true);
     } else {
-      // Segundo clique: finalizar
       const now = new Date();
       const diffMs = now.getTime() - startDate.getTime();
       const diffSec = diffMs / 1000;
@@ -56,7 +54,7 @@ export default function Home() {
         const now = new Date();
         const diffMs = now.getTime() - startDate.getTime();
         setElapsedTime(diffMs);
-      }, 10); // Atualiza a cada 10ms para suavizar
+      }, 10);
     }
 
     return () => {
@@ -157,14 +155,11 @@ export default function Home() {
               </Button>
             </form>
 
-
-            {/* Tempo real durante a contagem */}
             <p>
               <strong>Tempo atual:</strong>{" "}
               {running ? formatElapsedTime(elapsedTime) : "0.000"} segundos
             </p>
 
-            {/* Tempo final após a parada */}
             {data && !running && (
               <>
                 <div className="mt-4 text-center border rounded-lg p-6">

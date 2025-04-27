@@ -80,7 +80,7 @@ export const count = async (
     }
 
     return historicos.length;
-    
+
   } catch (error) {
     console.error(error);
     return new Error('Erro ao consultar os registros');

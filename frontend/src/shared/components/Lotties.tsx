@@ -6,7 +6,6 @@ import dynamic from "next/dynamic";
 import * as animationDataEmpty from '../../../public/animated-illustrations/Empty Order.json';
 import * as animationData404 from '../../../public/animated-illustrations/404 Error Page.json';
 
-// importa o Lottie dinamicamente e desativa o SSR para ele
 const Lottie = dynamic(() => import('react-lottie'), { ssr: false });
 
 interface LottieControlProps {

@@ -1,5 +1,3 @@
-
-
 export interface IHistorico {
     id: string;
     apelido: string;

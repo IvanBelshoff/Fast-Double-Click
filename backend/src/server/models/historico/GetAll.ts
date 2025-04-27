@@ -81,8 +81,8 @@ export const getAll = async (
       }
     }
 
-    let atributo = 'data_registro'; 
-    let ordem = 'desc';             
+    let atributo = 'data_registro';
+    let ordem = 'desc';
 
     if (sort && typeof sort === 'string') {
       const sortParts = sort.split('.');

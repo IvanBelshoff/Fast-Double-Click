@@ -8,7 +8,6 @@ router.get('/', (_, res) => {
     return res.status(StatusCodes.OK).send('Tudo certo');
 });
 
-//FUnciononarios
 router.post('/historico', HistoricoController.createValidation, HistoricoController.create);
 router.get('/historico', HistoricoController.getAll);
 router.delete('/historico/:id', HistoricoController.deleteByIdValidation, HistoricoController.deleteById);

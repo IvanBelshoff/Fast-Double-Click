@@ -83,7 +83,6 @@ export async function createHistoricoAction(prevState: any, formData: FormData) 
                 }
             };
 
-            // Retorno de um objeto indicando que ocorreu um erro durante a recuperação de senha.
             return response;
 
         } else {
@@ -94,7 +93,7 @@ export async function createHistoricoAction(prevState: any, formData: FormData) 
                 }
             };
 
-            // Retorno de um objeto indicando que ocorreu um erro durante a recuperação de senha.
+
             return response;
         }
     }
@@ -142,7 +141,6 @@ export async function deleteHistoricoById(prevState: any, formData: FormData) {
                 }
             };
 
-            // Retorno de um objeto indicando que ocorreu um erro durante a recuperação de senha.
             return response;
 
         } else {
@@ -153,7 +151,6 @@ export async function deleteHistoricoById(prevState: any, formData: FormData) {
                 }
             };
 
-            // Retorno de um objeto indicando que ocorreu um erro durante a recuperação de senha.
             return response;
         }
     }

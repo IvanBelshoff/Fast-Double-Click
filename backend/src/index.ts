@@ -1,4 +1,3 @@
-// index.ts
 import { db } from './server/database/lowdb';
 import { server } from './server/Server';
 
